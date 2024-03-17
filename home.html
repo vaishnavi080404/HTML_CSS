@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home Page</title>
+<style>
+ 
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0c0b0b;
+    color: white; 
+  }
+  header {
+    background-color: black;
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+  }
+  .logo img {
+    height: 50px;
+    display: block;
+  }
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  nav li {
+    margin-right: 20px;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    padding: 8px 12px; 
+  }
+  nav a:hover {
+    background-color: green;
+  } 
+  
+  body {
+    padding-top: 100px; 
+  } 
+
+  
+  @keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  .slide-in-container {
+    animation: slideInFromLeft 0.3s ease-in-out;
+    padding-left: 100px; 
+    padding-top: 20px; 
+    max-width: 80%; 
+    position: relative; 
+    z-index: 1;
+  }
+
+  .slide-in-image {
+    position: absolute; 
+    top: 0; 
+    right: 0px; 
+    width: 540px; 
+    z-index: -1; 
+  }
+
+  @keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.card-animate-fading {
+  animation: fadeIn 1s ease-in-out; 
+}
+
+
+.flip-card {
+  background-color: transparent;
+  width: 600px;
+  height: 300px;
+  perspective: 1000px;
+  margin: 20px auto; 
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: white;
+  color: black;
+  transform: rotateY(180deg);
+}
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%; 
+  margin: 20px; 
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+
+.card-content {
+  text-align: center;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="https://www.raweng.com/v3/assets/bltaacb6b0c9b693c2d/bltc1a71705f49d391d/5de663548d1dce6ad6bed8bf/header-logo.svg?format=pjpg&width=220" alt="Logo">
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">What we Do</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</header> 
+<style>
+  h1{
+    font-size: 60px;
+  }
+  .p1{
+    font-family: "Lucida Console", "Courier New", monospace;
+
+  }
+  .p2{
+    font-family: "Lucida Console", "Courier New", monospace;
+  }
+  .p3{
+    font-family: "Lucida Console", "Courier New", monospace;
+  }
+</style>
+
+
+<div style="height: 490px; width: 2000px; background-color: #221f1f;" class="slide-in-container">
+  <h1>Fast Track Innovation</h1>
+  <p class="p1">Raw Engineering’s experienced Product</p>
+  <p class="p2">Strategists, Solutions Architects, Designers, and Developers</p>
+  <p class="p3"> turn Business Vision into Digital Reality.</p> 
+  <img class="slide-in-image" src="https://www.raweng.com/v3/assets/bltaacb6b0c9b693c2d/blt7fa63094fe70efee/6040b958fef76d094c7017bb/Landing_Page-optim.jpeg?format=pjpg&width=540" alt="Image">
+</div>
+
+<div style="height: 2000px; background-color: white; color: black">
+  <br/>
+  <br/>
+  <br/>
+  <style>
+    h5 { text-align: center; }
+    .h5 { font-size: 30px; }
+    h4 { color: red; font-size: 30px; }
+    
+  </style>
+  <h5>
+    Raw Engineering is an Innovative SaaS & Mobile Product company. We partner with the world’s best <br/>
+    Fortune 500 Enterprises, Sports Teams and Startups to deliver world class Product Strategy and SaaS/Mobile solutions from inception to completion.
+  </h5>
+
+  <h4>📩 What We Do.</h4>
+  
+  <div style="display: flex; justify-content: space-between;">
+ 
+    <div class="flip-card card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://www.raweng.com/v3/assets/bltaacb6b0c9b693c2d/blta443c2bef6e814b4/615e2c2fdb34085ff954b238/Mobile_Teams_Composite_06.png?format=pjpg&width=600" height="300">
+        </div>
+        <div class="flip-card-back">
+          <p>01</p>
+          <h5>The Raw Engineering Digital Fan Experience</h5> 
+          <p>The Raw Engineering Digital Fan Experience leverages dynamic and personalized content to energize your fanbase with engaging storylines, key features, and real-time game info to create a better 365-day Fan Experience.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://www.raweng.com/v3/assets/bltaacb6b0c9b693c2d/bltc506717f0376f4d5/615e2e3cc22cd45706cf3b36/SaaS_coposite_02.jpg?format=pjpg&width=600" height="300">
+        </div>
+        <div class="flip-card-back">
+          <p>02</p>
+          <h5>SaaS & Mobile Product Strategy, Architecture & Development</h5> 
+          <p>We have brought five SaaS products to market and spun out two companies. Our Product strategists and architects can help you envision and build your SaaS or Mobile product from the ground up.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://www.raweng.com/v3/assets/bltaacb6b0c9b693c2d/blt5dd429dc67d56dbd/615e2e737ab23a526f22630c/DevOps_Compilation.jpg?format=pjpg&width=600" height="300">
+        </div>
+        <div class="flip-card-back">
+          <p>03</p>
+          <h5>DevOps, CloudOps & Site Reliability Engineering</h5> 
+          <p>DevOps & Cloud Management is in our DNA. Our company was founded to help clients move infrastructure to the Cloud and to maintain their infrastructure in the Cloud. We became an AWS partner is 2007, and have been expanding our services since to include MS Azure, Google Cloud, CI/CD, etc.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h4>📩 Latest Work.</h4>  
+  <div style="display: flex; justify-content: space-between; margin-top: 20px;">
+    <div class="card">
+      <img src="https://www.raweng.com/v3/assets/bltaacb6b0c9b693c2d/bltb9c81743588cc3b8/5e3157987f451542df72abed/Heat_thumbnail.jpg?format=pjpg&width=400" alt="Avatar" style="width:100%">
+      <div class="container">
+        <p>Mobile Development | CMS Implementation</p>
+        <h3>MIAMI HEAT</h3>  
+        <a href="case1.html">View Case Study</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://www.raweng.com/v3/assets/bltaacb6b0c9b693c2d/bltbcb3f13a7be2e30f/5e3157768f7e217daef67010/elastic-thumbnail-2.png?format=pjpg&width=400" alt="Avatar" style="width:100%">
+      <div class="container">
+        <p>Headless CMS | Web Development | ReactJS</p>
+        <h3>ELASTIC CASE STUDY</h3> 
+        <a href="case2.html">View Case Study</a>
+         
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://www.raweng.com/v3/assets/bltaacb6b0c9b693c2d/blt4c797c4cc2b5d022/5e3157b67e155302ca0c7c78/Kings-thumbnail.png?format=pjpg&width=400" alt="Avatar" style="width:100%">
+      <div class="container">
+        <p>Mobile Development | Microservices Integration</p>
+        <h3>SACRAMENTA KINGS</h3> 
+        <a href="case3.html">View Case Study</a>
+         
+      </div>
+    </div>
+  </div>
+  <h4>📩 Testimonals.</h4> 
+  <div style="display: flex; justify-content: space-between; margin-top: 20px;">
+  <div class="card">
+    <img src= "https://www.raweng.com/v3/assets/bltaacb6b0c9b693c2d/blt30909d2c01b4e380/5e43c869b498df0d571ffa16/mattew_j.png?format=pjpg&width=70">
+    <div class="container">
+      <h3>Matthew Jafarian</h3>
+      <p>EVP BUSINESS STRATEGY MIAMI HEAT</p> 
+      <p>"I have a reputation to want the best, and they deliver day in,
+        and day out. I can't recommend them enough. They are what
+        I want every partner to be."</p> 
+      
+    </div>
+  </div>
+  
+  <div class="card">
+    <img src= "https://www.raweng.com/v3/assets/bltaacb6b0c9b693c2d/blte7777996afe15d2d/5e2d536007e2907e353a08e8/Sylvie_Shimizu_Image.jpeg?format=pjpg&width=70">
+    <div class="container">
+      <h3>Sylvie Shimizu</h3>
+      <p>WEBMASTER, ELASTIC INC.</p>
+      <p>"Our company had a very aggressive timeline to both
+        redesign and migrate our website. With Raw Engineering, we
+        were able to make those changes in no time."</p> 
+    </div>
+  </div>
+  </div>
+
+  <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;">
+    <h2>Ready to get started on your next project?</h2>
+    <a href="getintouch.html" style="margin-top: 20px; color: black; text-decoration: underline;">GET IN TOUCH</a>
+  </div>
+  
+ 
+ 
+
+  <div style="display: flex; justify-content:center; align-items:normal; color:white;">
+<p>Privacy | Backend Terms of Use | Modern Slavery Act Statement</p>
+  </div>
+
+ 
+<footer style="text-align: center; padding: 20px; ">
+  <div class="footer-icons" style="display: flex; justify-content: center;">
+    <a href="https://www.instagram.com/raw.engineering/"><img src="https://cdn4.iconfinder.com/data/icons/picons-social/57/38-instagram-2-512.png" alt="Instagram" height="30"></a>
+    <a href="https://twitter.com/raweng"><img src="https://cdn0.iconfinder.com/data/icons/typicons-2/24/social-twitter-circular-64.png" alt="Twitter" height="30"></a>
+    <a href="https://www.facebook.com/rawengineering/"><img src="https://cdn3.iconfinder.com/data/icons/social-media-2253/17/Vector-2-64.png" alt="Facebook" height="30"></a>
+    <a href="https://www.linkedin.com/company/raw-engineering"><img src="https://cdn3.iconfinder.com/data/icons/social-media-2253/17/Vector-4-256.png" alt="LinkedIn" height="30"></a>
+  </div>
+  <p style="margin-top: 10px;">&copy; 2024 Raw Engineering</p>
+</footer>
+
+</body>
+</html>
+
+
+ 
+
+

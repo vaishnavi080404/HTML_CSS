@@ -1,0 +1,101 @@
+<style>
+  /* Basic styles */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #221f1f;/*Set background color to black */
+    color: white; /* Set text color to white */
+  }
+  header {
+    background-color:black;
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure the header appears above other content */
+  }
+  .logo img {
+    height: 50px;
+    display: block;
+  }
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  nav li {
+    margin-right: 20px;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    padding: 8px 12px; /* Adjust padding as needed */
+  }
+  nav a:hover {
+    background-color: green;
+  } 
+  /* Adjust body padding to prevent content from being hidden behind fixed header */
+  body {
+    padding-top: 100px; /* Adjust as needed based on the header height */
+  } 
+
+  /* Animation styles */
+  @keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  .slide-in-container {
+    animation: slideInFromLeft 0.3s ease-in-out;
+    padding-left: 100px; /* Increase left padding to move text away from the left corner */
+    padding-top: 20px; /* Add padding to move text away from the top */
+    max-width: 80%; /* Limit the maximum width of the container */
+    position: relative; /* Position relative to contain absolute positioned image */
+    z-index:1
+  }
+
+  .slide-in-image {
+    position: absolute; /* Position the image relative to the container */
+    top: 0; /* Align image to the top */
+    right: 0px; /* Adjust right position to move away from the right corner */
+    width: 540px; /* Set the width of the image */
+    z-index: -1; /* Ensure the image is behind the text */
+  }
+
+  /* Additional styles for the fading animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .card-container {
+    text-align: center; /* Center the image */
+  }
+
+  .card-animate-fading {
+    animation: fadeIn 1s ease-in-out; /* Apply fade-in animation */
+  }
+</style>
+
+
+
+
+
+
+
+  
