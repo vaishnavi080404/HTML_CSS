@@ -3,53 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact Page</title>
-<style>
-  /* Basic styles */
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  header {
-    background-color: #333;
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000; /* Ensure the header appears above other content */
-  }
-  .logo img {
-    height: 40px;
-    display: block;
-  }
-  nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-  }
-  nav li {
-    margin-right: 20px;
-  }
-  nav a {
-    color: white;
-    text-decoration: none;
-    transition: background-color 0.3s;
-    padding: 8px 12px; /* Adjust padding as needed */
-  }
-  nav a:hover {
-    background-color: green;
-  } 
-  /* Adjust body padding to prevent content from being hidden behind fixed header */
-  body {
-    padding-top: 60px; /* Adjust as needed based on the header height */
-  } 
-</style>
+<title>Miami HEAT Case Study</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -60,28 +15,113 @@
   <nav>
     <ul>
       <li><a href="home.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="what.html">What we Do</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">What we Do</a></li>
+      <li><a href="getintouch.html">Contact</a></li>
     </ul>
   </nav>
-</header> 
+</header>
 
-<!-- Add some content to demonstrate scrolling   -->
-<div style="height:1px; background-color:white;"></div>
-<img src="https://www.raweng.com/v3/assets/bltaacb6b0c9b693c2d/blt8d728493ad1b817d/5e234a735780a14fa020446b/elastic_small_3.jpg?width=700">
-<h2>
-  A Consultative Approach
-</h2>
-<p>
-  Raw Engineering stepped up quickly to help Sylvie identify and address the pain points in Elastic’s current platform. We partnered with Sylvie to architect and implement a new nimble Tech Stack with a microservices-first approach, while concurrently developing the new website brand and design.
+<section class="hero2">
+  <div class="hero-content">
+    <h1>Elastic</h1>
+    <p class="content2"><b>Digital Transformation on a Deadline</b></p>
+  </div>
+</section>
 
-Architected a Microservices-first Technical Stack
-Contentstack CMS Implementation and Management
-Web/CMS Development
-DevOps & Cloud Management
-QA Automations & Testing
-Ongoing Technical Maintenance & Support
-</p>
+<section class="section white-section">
+  <div class="container">
+    <h2>A New Tech Stack, a New Brand, a New Design, and Not a Lot of Time.</h2>
+    <p>As soon as Sylvie Shimizu started her new role as Webmaster at Elastic, she knew Elastic’s Web Stack needed an overhaul and that she needed a new partner. The existing platform was clumsy, slow and had a tendency to crash. There was no functional staging area and the production site ran on a completely different system. Furthermore, Elastic’s existing agency was slow to make necessary changes and their developers weren’t experienced enough to make the process run smoothly. Elastic had to wait anywhere from a few days to several weeks for changes, and were often told the features and integrations they wanted were impossible</p>
+
+      <p>To add fuel to the fire, she was on a tight deadline to replace the Tech Stack, including the CMS, introduce a new brand and deliver a redesign that combined multiple website before Elastic’s first user conference in three months.</p>
+      
+      <p>Having worked with Raw Engineering previously, Sylvie new there was only one choice for a Technical Partner...Raw Engineering.</p>
+      </p>
+  </div>
+</section>
+
+<section class="section black-section">
+  <div class="container flex-container">
+    <div class="flex-item">
+      <h2 class="approach">Our Approach</h2>
+      <br>
+      <h3>A Consultative Approach</h3>
+      <p>Raw Engineering stepped up quickly to help Sylvie identify and address the pain points in Elastic’s current platform. We partnered with Sylvie to architect and implement a new nimble Tech Stack with a microservices-first approach, while concurrently developing the new website brand and design.</p>
+    </div>
+    <div class="flex-item">
+      <img src="https://www.raweng.com/v3/assets/bltaacb6b0c9b693c2d/blt919dc21c1303d9ad/5e316d7f5e4f947dad5506aa/elastic_small_4.jpg?width=300">
+      <img src="https://www.raweng.com/v3/assets/bltaacb6b0c9b693c2d/blt5ddc271194e3738b/5e234a73971983121335e520/elastic_small_2.jpg?width=300">
+      <img src="https://www.raweng.com/v3/assets/bltaacb6b0c9b693c2d/blt8d728493ad1b817d/5e234a735780a14fa020446b/elastic_small_3.jpg?width=300">
+      
+    </div>
+    </div>
+    <div>
+
+    <ul class="list">
+      
+      <li>
+        Architected a Microservices-first Technical Stack
+      </li>
+        <br>
+        <li>
+          Contentstack CMS Implementation and Management
+      </li>
+      <br>
+      <li>
+        Web/CMS Development
+      </li>
+      <br>
+      <li>
+        DevOps & Cloud Management
+      </li>
+      <br>
+      <li>
+        QA Automations & Testing
+      </li>
+      <br>
+      <li>
+        Ongoing Technical Maintenance & Support
+      </li>
+     
+  </div>
+  
+</section>
+
+<section class="section white-section">
+  <div class="container flex-container">
+    <div class="flex-item">
+      <h2 class="solution">The Solution</h2>
+      <br>
+      <h3>Contentstack Implementation</h3>
+      <p>We analyzed how Elastic planned to use Contentstack - who would be editing content, how workflows would be approached, how content would be approved, etc. We also looked at Elastic’ content approach and environment requirements (dev, staging, production). Once we analyzed this data, we created the Content Architecture, Platform Architecture, Set up the User Management workflows, and set up Elastic’s AWS environment.</p>
+    </div>
+    <div class="flex-item">
+      <img src="https://www.raweng.com/v3/assets/bltaacb6b0c9b693c2d/bltf974d0ee8e63bb1d/5e3291c47ca70442647a56d3/Contentstack-Implementation.png?width=500">
+    </div>
+  </div>
+</section>
+
+<div class="cta">
+  <h2>Ready to get started on your next project?</h2>
+  <a href="getintouch.html">GET IN TOUCH</a>
+</div>
+
+<footer>
+<div class="footer-icons">
+  <a href="https://www.instagram.com/raw.engineering/"><img src="https://cdn4.iconfinder.com/data/icons/picons-social/57/38-instagram-2-512.png" alt="Instagram" height="30"></a>
+  <a href="https://twitter.com/raweng"><img src="https://cdn0.iconfinder.com/data/icons/typicons-2/24/social-twitter-circular-64.png" alt="Twitter" height="30"></a>
+  <a href="https://www.facebook.com/rawengineering/"><img src="https://cdn3.iconfinder.com/data/icons/social-media-2253/17/Vector-2-64.png" alt="Facebook" height="30"></a>
+  <a href="https://www.linkedin.com/company/raw-engineering"><img src="https://cdn3.iconfinder.com/data/icons/social-media-2253/17/Vector-4-256.png" alt="LinkedIn" height="30"></a>
+</div>
+<p>&copy; 2024 Raw Engineering</p>
+</footer>
+
 </body>
-</html> 
+</html>
+
+
+
+
+
+

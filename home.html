@@ -4,157 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Home Page</title>
-<style>
- 
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #0c0b0b;
-    color: white; 
-  }
-  header {
-    background-color: black;
-    padding: 20px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000; 
-  }
-  .logo img {
-    height: 50px;
-    display: block;
-  }
-  nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-  }
-  nav li {
-    margin-right: 20px;
-  }
-  nav a {
-    color: white;
-    text-decoration: none;
-    transition: background-color 0.3s;
-    padding: 8px 12px; 
-  }
-  nav a:hover {
-    background-color: green;
-  } 
-  
-  body {
-    padding-top: 100px; 
-  } 
+<link rel="apple-touch-icon" sizes="180x180" href="logo/favicon_io (2)/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="logo/favicon_io (2)/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="logo/favicon_io (2)/favicon-16x16.png">
+<link rel="manifest" href="logo/favicon_io (2)/site.webmanifest">
 
-  
-  @keyframes slideInFromLeft {
-    0% {
-      transform: translateX(-100%);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
+<link rel="stylesheet" href="style.css">
 
-  .slide-in-container {
-    animation: slideInFromLeft 0.3s ease-in-out;
-    padding-left: 100px; 
-    padding-top: 20px; 
-    max-width: 80%; 
-    position: relative; 
-    z-index: 1;
-  }
-
-  .slide-in-image {
-    position: absolute; 
-    top: 0; 
-    right: 0px; 
-    width: 540px; 
-    z-index: -1; 
-  }
-
-  @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-.card-animate-fading {
-  animation: fadeIn 1s ease-in-out; 
-}
-
-
-.flip-card {
-  background-color: transparent;
-  width: 600px;
-  height: 300px;
-  perspective: 1000px;
-  margin: 20px auto; 
-}
-
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.flip-card-front {
-  background-color: #bbb;
-  color: black;
-}
-
-.flip-card-back {
-  background-color: white;
-  color: black;
-  transform: rotateY(180deg);
-}
-
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 40%; 
-  margin: 20px; 
-}
-
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.container {
-  padding: 2px 16px;
-}
-
-
-.card-content {
-  text-align: center;
-}
-
-</style>
 </head>
 <body>
 
@@ -164,29 +20,14 @@
   </div>
   <nav>
     <ul>
-      <li><a href="#">Home</a></li>
+      <li><a href="home.html">Home</a></li>
       <li><a href="#">About</a></li>
       <li><a href="#">What we Do</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="getintouch.html">Contact</a></li>
     </ul>
   </nav>
 </header> 
-<style>
-  h1{
-    font-size: 60px;
-  }
-  .p1{
-    font-family: "Lucida Console", "Courier New", monospace;
-
-  }
-  .p2{
-    font-family: "Lucida Console", "Courier New", monospace;
-  }
-  .p3{
-    font-family: "Lucida Console", "Courier New", monospace;
-  }
-</style>
-
+ 
 
 <div style="height: 490px; width: 2000px; background-color: #221f1f;" class="slide-in-container">
   <h1>Fast Track Innovation</h1>
@@ -200,16 +41,13 @@
   <br/>
   <br/>
   <br/>
-  <style>
-    h5 { text-align: center; }
-    .h5 { font-size: 30px; }
-    h4 { color: red; font-size: 30px; }
-    
-  </style>
+
+  
   <h5>
     Raw Engineering is an Innovative SaaS & Mobile Product company. We partner with the world’s best <br/>
     Fortune 500 Enterprises, Sports Teams and Startups to deliver world class Product Strategy and SaaS/Mobile solutions from inception to completion.
   </h5>
+  
 
   <h4>📩 What We Do.</h4>
   
@@ -286,59 +124,51 @@
       </div>
     </div>
   </div>
-  <h4>📩 Testimonals.</h4> 
-  <div style="display: flex; justify-content: space-between; margin-top: 20px;">
-  <div class="card">
-    <img src= "https://www.raweng.com/v3/assets/bltaacb6b0c9b693c2d/blt30909d2c01b4e380/5e43c869b498df0d571ffa16/mattew_j.png?format=pjpg&width=70">
-    <div class="container">
-      <h3>Matthew Jafarian</h3>
-      <p>EVP BUSINESS STRATEGY MIAMI HEAT</p> 
-      <p>"I have a reputation to want the best, and they deliver day in,
-        and day out. I can't recommend them enough. They are what
-        I want every partner to be."</p> 
-      
-    </div>
-  </div>
-  
-  <div class="card">
-    <img src= "https://www.raweng.com/v3/assets/bltaacb6b0c9b693c2d/blte7777996afe15d2d/5e2d536007e2907e353a08e8/Sylvie_Shimizu_Image.jpeg?format=pjpg&width=70">
-    <div class="container">
-      <h3>Sylvie Shimizu</h3>
-      <p>WEBMASTER, ELASTIC INC.</p>
-      <p>"Our company had a very aggressive timeline to both
-        redesign and migrate our website. With Raw Engineering, we
-        were able to make those changes in no time."</p> 
-    </div>
-  </div>
-  </div>
+  <div class="testimonials">
+    <h2>Testimonials</h2>
+    <div class="testimonial-cards">
+        <div class="testimonial-card">
+            <img src="https://www.raweng.com/v3/assets/bltaacb6b0c9b693c2d/blt30909d2c01b4e380/5e43c869b498df0d571ffa16/mattew_j.png?format=pjpg&width=70" alt="Testimonial 1">
+            <div class="testimonial-details">
+                <h3>Matthew Jafarian</h3>
+                <p>EVP BUSINESS STRATEGY MIAMI HEAT</p>
+                <p>"I have a reputation to want the best, and they deliver day in and day out. I can't recommend them enough. They are what I want every partner to be."</p>
+            </div>
+        </div>
 
-  <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;">
+        <div class="testimonial-card">
+            <img src="https://www.raweng.com/v3/assets/bltaacb6b0c9b693c2d/blte7777996afe15d2d/5e2d536007e2907e353a08e8/Sylvie_Shimizu_Image.jpeg?format=pjpg&width=70" alt="Testimonial 2">
+            <div class="testimonial-details">
+                <h3>Sylvie Shimizu</h3>
+                <p>WEBMASTER, ELASTIC INC.</p>
+                <p>"Our company had a very aggressive timeline to both redesign and migrate our website. With Raw Engineering, we were able to make those changes in no time."</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="cta">
     <h2>Ready to get started on your next project?</h2>
-    <a href="getintouch.html" style="margin-top: 20px; color: black; text-decoration: underline;">GET IN TOUCH</a>
-  </div>
-  
- 
- 
+    <a href="getintouch.html">GET IN TOUCH</a>
+</div>
 
-  <div style="display: flex; justify-content:center; align-items:normal; color:white;">
-<p>Privacy | Backend Terms of Use | Modern Slavery Act Statement</p>
-  </div>
 
- 
-<footer style="text-align: center; padding: 20px; ">
-  <div class="footer-icons" style="display: flex; justify-content: center;">
+ <footer>
+  <div class="footer-icons">
     <a href="https://www.instagram.com/raw.engineering/"><img src="https://cdn4.iconfinder.com/data/icons/picons-social/57/38-instagram-2-512.png" alt="Instagram" height="30"></a>
     <a href="https://twitter.com/raweng"><img src="https://cdn0.iconfinder.com/data/icons/typicons-2/24/social-twitter-circular-64.png" alt="Twitter" height="30"></a>
     <a href="https://www.facebook.com/rawengineering/"><img src="https://cdn3.iconfinder.com/data/icons/social-media-2253/17/Vector-2-64.png" alt="Facebook" height="30"></a>
     <a href="https://www.linkedin.com/company/raw-engineering"><img src="https://cdn3.iconfinder.com/data/icons/social-media-2253/17/Vector-4-256.png" alt="LinkedIn" height="30"></a>
-  </div>
-  <p style="margin-top: 10px;">&copy; 2024 Raw Engineering</p>
+</div>
+<p>&copy; 2024 Raw Engineering</p>
 </footer>
 
 </body>
 </html>
+>
 
+</body>
+</html>
 
- 
 
 
