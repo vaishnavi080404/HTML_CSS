@@ -43,7 +43,7 @@ body {
   
   
   .hero {
-    background-image: url(./assests/Miami-HEAT-1024x614.jpeg);
+    background-image: url(./assests/Miami-HEAT.jpeg);
     min-height: 100px;
     height: 20vw;
     background-size: cover;
@@ -56,12 +56,12 @@ body {
     font-size: 30px;
   }
   .hero2 {
-    background-image: url(./assests/images.jpg);
+    background-image: url(./assests/elastic.jpeg);
     min-height: 100px;
     height: 20vw;
     background-size: cover;
     background-position: center;
-    color:rgb(17, 17, 17);
+    color:rgb(31, 30, 30);
     text-align: center;
     padding: 100px 50px;
     text-align: left;
@@ -71,12 +71,12 @@ body {
   }
 
   .hero3 {
-    background-image: url(./assests/images\ \(1\).jpg);
+    background-image: url(./assests/images.jpg);
     min-height: 100px;
     height: 20vw;
     background-size: cover;
     background-position: center;
-    color:rgb(255, 249, 249);
+    color:rgb(22, 187, 220);
     text-align: center;
     padding: 100px 50px;
     text-align: left;
@@ -205,7 +205,7 @@ body {
     .container {
         padding: 0 10px;
     }
-  
+  }
   
   
   
